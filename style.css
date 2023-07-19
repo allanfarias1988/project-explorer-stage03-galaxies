@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --platform-aliases-shape-principal: #202024;
+  --platform-aliases-shape-terciria: #323238;
+  --platform-aliases-background: #121214;
+  --brand-colors-explorer-mid: #02799d;
+  --platform-aliases-ttulos: #e1e1e6;
+  --platform-aliases-texto-base: #c4c4cc;
+}
+
+body {
+  background-color: var(--platform-aliases-background);
+  font-family: "Mulish", sans-serif;
+  padding: 72px 120px 120px;
+  display: grid;
+  justify-content: center;
+}
+
+header h1 {
+  color: var(--brand-colors-explorer-mid);
+  font-size: 64px;
+  font-weight: 900;
+}
+
+header p {
+  color: var(--platform-aliases-ttulos);
+}
+
+main {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    368px
+  ); /* 366px (add 2 pixel to card width) */
+  gap: 60px;
+}
+
+.card {
+  border-radius: 8px;
+  border: 2px solid var(--platform-aliases-shape-terciria);
+  background-color: var(--platform-aliases-shape-principal);
+}
+
+.card h3 {
+  color: var(--platform-aliases-ttulos);
+  font-size: 36px;
+  font-weight: 900;
+  padding: 24px;
+}
+
+.card p {
+  color: var(--platform-aliases-texto-base);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 22px 40px;
+}
